@@ -1,0 +1,125 @@
+body { 
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    font: 12px verdana, arial, sans-serif;
+    background-color: rgb(185, 148, 255);
+}
+
+#app {
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;width: 100;
+    width: 110%;
+    margin-top: 30vh;
+    padding-bottom: 5px;
+    background-color: rgb(128, 72, 231);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 200ms;
+}
+
+#app h1 { 
+    color: rgb(198, 168, 255);
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(198, 168, 255);    
+}
+
+#app button {
+    border: 0;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: rgb(116, 65, 212);
+    border: 2px solid rgb(77, 44, 138);
+    border-radius: 5px;
+    color: rgb(77, 44, 138);
+}
+
+#app button:hover {
+    background-color: rgb(77, 44, 138);
+    color: rgb(116, 65, 212);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#app input {
+    border: 0;
+    border-bottom: 2px solid rgb(77, 44, 138);
+    border-radius: 2px;
+    padding: 2px;
+    background: transparent;
+}
+
+input:focus {
+    border-color: none !important;
+    outline: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(198, 168, 255);
+    font: 12px verdana, arial, sans-serif;
+}
+
+#app ul li a {
+    overflow:hidden;
+    text-decoration: none;
+    border: 2px solid rgb(77, 44, 138);
+    padding: 5px;
+    margin-left:10px;
+    border-radius: 5px;
+    background-color:rgb(116, 65, 212);
+    color: rgb(77, 44, 138);
+    margin-right: 0px;
+}
+#app ul li a:hover {
+    background-color: rgb(77, 44, 138);
+    color: rgb(116, 65, 212);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#app ul li {
+    color: rgb(198, 168, 255);
+    font-weight: bold;
+    list-style-type: none;
+    border-left: 2px solid rgb(77, 44, 138);
+    padding-left: 5px;
+    margin-bottom: 15px;
+    animation: move 500ms;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes fade { 
+    from {
+        opacity: 0;
+        transform: scale(0.9)
+    }
+    to { 
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+
+
+#app input { 
+    animation: move 500ms;
+    animation-delay: 250ms;
+}
+
+@keyframes move { 
+    from {
+        opacity: 0;
+        transform: translateX(-35%)
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
